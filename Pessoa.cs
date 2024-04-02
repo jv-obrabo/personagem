@@ -51,3 +51,13 @@ public string CPF {
         set {salario = value; }
      }
  }
+
+ public class diretor: Funcionario {
+     public diretor(string nome,int idade,string cpf,double salario) :base(nome,idade,cpf,salario){
+     }
+
+     public override double bonus{
+        return base.Bonus() + 1000;
+     }
+ }
+ 
