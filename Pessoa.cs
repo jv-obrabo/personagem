@@ -34,3 +34,20 @@ public string CPF {
         set  {curso = value;}
      }
  }
+
+ public class funcionario : Pessoa {
+    private double salario
+
+    public double Bonus() {
+        return salario * 0.1;
+    }
+     
+     public funcionario (string nome, int idade,string cpf, double salario) :base(nome,idade,cpf){
+        salario = salario;
+     }
+
+     public string Salario { 
+        get {return salario; }
+        set {salario = value; }
+     }
+ }
